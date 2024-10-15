@@ -8,7 +8,7 @@ The dataset used in this analysis can be found [here](https://www.kaggle.com/dat
 
 ## Notebook Overview
 
-The notebook `original/yelp.ipynb` covers the following steps:
+The notebook `yelp.ipynb` covers the following steps:
 
 1. **Data Loading and Exploration**
    - Importing necessary libraries.
@@ -22,7 +22,7 @@ The notebook `original/yelp.ipynb` covers the following steps:
    - Using TextBlob to compute sentiment scores.
 
 3. **Data Visualization**
-   - Visualizing the dataset using histograms, boxplots, and count plots.
+   - Visualizing the dataset using histograms, boxplots, correlation matrix and count plots.
    - Creating word clouds for 1-star and 5-star reviews.
 
 4. **Model Training**
@@ -31,19 +31,29 @@ The notebook `original/yelp.ipynb` covers the following steps:
    - Using pipelines and GridSearchCV for hyperparameter tuning.
 
 5. **Model Evaluation**
-   - Evaluating model performance using metrics such as accuracy.
+   - Evaluating model performance using metrics such as accuracy, recall, f1-score and precision.
    - Printing the best parameters and scores from GridSearchCV.
 
 ## How to Run
 
+![live application screenshot](image.png)
+
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/sentiment-analysis-yelp.git
+   ```
+   git clone https://github.com/bethanyjep/yelp_ghc_sentiment_analysis.git
    cd sentiment-analysis-yelp
+   ```
+
+2. Create a virtual python environment: `python3 -m venv venv`. And navigate to the environment you created:
+   - Windows: `.\venv\Scripts\activate`
+   - MacOS/Linux: `source env/bin/activate`
+
+3. Install the necessary dependancies: `pip install -r requirements.txt`
+
+4. Run the streamlit app
+   `streamlit run yelp.py`
 
 ## Requirements
-- Python 3.10
-- Jupyter Notebook
 - pandas
 - numpy
 - matplotlib
@@ -53,15 +63,15 @@ The notebook `original/yelp.ipynb` covers the following steps:
 - textblob
 - scikit-learn
 - wordcloud
+- streamlit
 
 ## Results
-The notebook evaluates the performance of the models using metrics such as accuracy, precision, recall, and F1 score. It also provides insights and recommendations based on the analysis, including potential areas for improvement and future work.
+The notebook evaluates the performance of the models using metrics such as accuracy, precision, recall, and F1 score. 
 
 ## Future Work
 - Improve the performance of the machine learning models by experimenting with different features and hyperparameters.
 - Explore other machine learning algorithms and techniques for sentiment analysis.
 - Provide more detailed insights and recommendations based on the analysis.
-- Build a flask app from the model
 
 ## License
 
