@@ -1,5 +1,7 @@
 # Sentiment Analysis with Yelp Dataset
 
+![live application screenshot](image.png)
+
 This repository contains a Jupyter notebook that performs sentiment analysis on the Yelp dataset. The dataset contains over 4,000 unique reviews and is used to train machine learning models to predict the sentiment of each review.
 
 ## Dataset
@@ -36,7 +38,7 @@ The notebook `yelp.ipynb` covers the following steps:
 
 ## How to Run
 
-![live application screenshot](image.png)
+![negative sentiment screenshot](image-1.png)
 
 1. Clone the repository:
    ```
